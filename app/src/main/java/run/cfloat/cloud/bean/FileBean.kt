@@ -1,5 +1,5 @@
 package run.cfloat.cloud.bean
 
-data class CustomBean(
+data class FileBean(
     val name: String
 );

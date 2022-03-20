@@ -1,17 +1,16 @@
 package run.cfloat.cloud.adapter
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import run.cfloat.cloud.R
-import run.cfloat.cloud.bean.CustomBean
+import run.cfloat.cloud.bean.FileBean
 
-class CustomAdapter(
-    private val data: List<CustomBean>
-) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+class FileAdapter(
+    private val data: List<FileBean>
+) : RecyclerView.Adapter<FileAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.textView);
