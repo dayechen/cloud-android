@@ -29,6 +29,18 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    dataBinding {
+        enabled = true
+    }
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res',
+                    'src/main/res/layout/view',
+                    'src/main/res/layout/component',
+            ]
+        }
+    }
 }
 
 dependencies {

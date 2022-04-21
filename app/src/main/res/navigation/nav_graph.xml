@@ -17,6 +17,19 @@
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@android:anim/fade_out"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_choiceFragment_to_smbLogin"
+            app:destination="@id/smbLogin" />
+        <action
+            android:id="@+id/action_choiceFragment_to_smbLogin2"
+            app:destination="@id/smbLogin" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/smbLogin"
+        android:name="run.cfloat.cloud.view.SmbLogin"
+        android:label="fragment_file"
+        tools:layout="@layout/smb_login">
     </fragment>
 
     <fragment
@@ -32,7 +45,6 @@
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@android:anim/fade_out"
             app:popUpToInclusive="true" />
-
     </fragment>
 
 </navigation>
