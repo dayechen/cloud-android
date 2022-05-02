@@ -22,26 +22,23 @@ class Smb {
         password: String,
         domain: String
     ) {
-        try {
-            val connection = client.connect(serverName)
-            val ac = AuthenticationContext(userName, password.toCharArray(), domain)
-            val session = connection.authenticate(ac)
-            val share = session.connectShare(shareName) as DiskShare
-            val file = share.openFile(
-                "/smb_test/test001.txt",
-                setOf(AccessMask.FILE_READ_DATA),
-                null,
-                SMB2ShareAccess.ALL,
-                SMB2CreateDisposition.FILE_OPEN,
-                setOf(SMB2CreateOptions.FILE_DIRECTORY_FILE)
-            )
-            for (item in share.list("/smb_test")) {
-                Log.i("SMB", item.fileName)
-            }
-        } catch (e: IOException) {
-            Log.i("SMB", "连接失败${e.localizedMessage}")
-        } catch (e: NetworkOnMainThreadException) {
-            Log.i("SMB", "连接失败${e.localizedMessage}")
+
+        val connection = client.connect(serverName)
+        val ac = AuthenticationContext(userName, password.toCharArray(), domain)
+        val session = connection.authenticate(ac)
+        val share = session.connectShare(shareName) as DiskShare
+//            val file = share.openFile(
+//                "/smb_test/test001.txt",
+//                setOf(AccessMask.FILE_READ_DATA),
+//                null,
+//                SMB2ShareAccess.ALL,
+//                SMB2CreateDisposition.FILE_OPEN,
+//                setOf(SMB2CreateOptions.FILE_DIRECTORY_FILE)
+//            )
+
+        for (item in share.list("/")) {
+            Log.i("SMB", item.fileName)
         }
+
     }
 }

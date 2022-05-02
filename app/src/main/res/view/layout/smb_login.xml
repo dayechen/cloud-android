@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="run.cfloat.cloud.data.SmbLoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            bind:layout_constraintBottom_toBottomOf="parent"
+            bind:layout_constraintTop_toTopOf="parent"
+            bind:layout_constraintVertical_bias="0.192"
+            tools:layout_editor_absoluteX="16dp">
+
+            <include
+                layout="@layout/input"
+                bind:inputType="@{data.serverName.inputType}"
+                bind:label="@{data.serverName.label}"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toTopOf="parent"
+                bind:value="@={data.serverName.value}" />
+
+            <include
+                layout="@layout/input"
+                bind:inputType="@{data.shareName.inputType}"
+                bind:label="@{data.shareName.label}"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toTopOf="parent"
+                bind:value="@={data.shareName.value}" />
+
+            <include
+                layout="@layout/input"
+                bind:inputType="@{data.userName.inputType}"
+                bind:label="@{data.userName.label}"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toTopOf="parent"
+                bind:value="@={data.userName.value}" />
+
+            <include
+                layout="@layout/input"
+                bind:inputType="@{data.password.inputType}"
+                bind:label="@{data.password.label}"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toTopOf="parent"
+                bind:value="@={data.password.value}" />
+
+            <include
+                layout="@layout/input"
+                bind:inputType="@{data.domain.inputType}"
+                bind:label="@{data.domain.label}"
+                bind:layout_constraintEnd_toEndOf="parent"
+                bind:layout_constraintStart_toStartOf="parent"
+                bind:layout_constraintTop_toTopOf="parent"
+                bind:value="@={data.domain.value}" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:text="登录"
+            bind:layout_constraintEnd_toEndOf="parent"
+            bind:layout_constraintHorizontal_bias="0.498"
+            bind:layout_constraintStart_toStartOf="parent"
+            bind:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

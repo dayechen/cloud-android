@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="label"
+            type="String" />
+
+        <variable
+            name="value"
+            type="String" />
+
+        <variable
+            name="inputType"
+            type="int" />
+    </data>
+
+    <merge>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@{label}"
+            android:imeOptions="actionDone"
+            android:inputType="@{inputType}"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={value}"
+
+            />
+    </merge>
+</layout>

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Home/Code/Android/cloud/app/src/main/res/component/layout/input.xml" value="0.2966804979253112" />
         <entry key="..\:/Home/Code/Android/cloud/app/src/main/res/layout/activity_main.xml" value="0.29171528588098017" />
         <entry key="..\:/Home/Code/Android/cloud/app/src/main/res/layout/custom_item.xml" value="0.3333333333333333" />
         <entry key="..\:/Home/Code/Android/cloud/app/src/main/res/layout/fragment_choice.xml" value="0.4466666666666667" />
@@ -10,11 +11,8 @@
         <entry key="..\:/Home/Code/Android/cloud/app/src/main/res/layout/list_item.xml" value="0.4466666666666667" />
         <entry key="..\:/Home/Code/Android/cloud/app/src/main/res/layout/recycler_item.xml" value="0.39427083333333335" />
         <entry key="..\:/Home/Code/Android/cloud/app/src/main/res/layout/tabbar_fragment.xml" value="0.4466666666666667" />
-        <entry key="..\:/code/android/cloud-android/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/code/android/cloud-android/app/src/main/res/layout/fragment_choice.xml" value="0.264" />
-        <entry key="..\:/code/android/cloud-android/app/src/main/res/layout/fragment_file.xml" value="0.536" />
-        <entry key="..\:/code/android/cloud-android/app/src/main/res/layout/view/layout/home.xml" value="0.6" />
-        <entry key="..\:/code/android/cloud-android/app/src/main/res/layout/view/layout/smb_login.xml" value="0.264" />
+        <entry key="..\:/Home/Code/Android/cloud/app/src/main/res/layout/view/layout/smb_login.xml" value="0.6" />
+        <entry key="..\:/Home/Code/Android/cloud/app/src/main/res/view/layout/smb_login.xml" value="0.2966804979253112" />
       </map>
     </option>
   </component>
